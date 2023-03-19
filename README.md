@@ -139,10 +139,10 @@ https://wakatime.com/@spcn17/projects/qknlnznyzo
 
 ![minikube](https://user-images.githubusercontent.com/117428887/226186765-0f02770b-b293-4a2b-88f7-ad4ca8d842e3.png)
 
-## 2. https://traefik.spcn17.local/dashboard/#/http/routers
+## 2. https://traefik.spcn10.local/dashboard/#/http/routers
 
 ![http](https://user-images.githubusercontent.com/117428887/226187993-5344d135-b75f-4333-8f44-16ce88e3aca5.png)
 
-## 5. http://web.spcn17.local/
+## 5. http://web.spcn10.local/
 
 ![Second](https://user-images.githubusercontent.com/117428887/226188018-4386374e-b0d9-4825-b258-32e6be44b8d1.png)
