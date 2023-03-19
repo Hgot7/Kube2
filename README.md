@@ -30,7 +30,7 @@ https://wakatime.com/@spcn17/projects/qknlnznyzo
 
        - Click New
         
-        ![image](https://user-images.githubusercontent.com/119097836/226183877-99da52f9-aefa-49da-847d-550a43801da7.png)
+        ![image](https://user-images.githubusercontent.com/117428887/226186676-19c0a2c1-d21b-43ac-83b8-3d97b0cf9b34.png)
 
       - Add Path that have kubectl.exe
       - Click OK
@@ -69,13 +69,13 @@ https://wakatime.com/@spcn17/projects/qknlnznyzo
    ```ruby
    minikube start --driver=docker
    ```
-   ![image](https://user-images.githubusercontent.com/119097836/226183616-bbfe2bad-c10d-4f23-894f-f6ce7c41a27c.png)
+   ![image](https://user-images.githubusercontent.com/117428887/226186725-ad795e36-54b5-442d-bbfd-08ec2437bfb7.png)
 
 2. Run with open dashboard
    ```ruby
    minikube dashboard
    ```
-   ![image](https://user-images.githubusercontent.com/119097836/226185662-d2692848-4b5d-4116-9110-47905405da2b.png)
+   ![minikube](https://user-images.githubusercontent.com/117428887/226186765-0f02770b-b293-4a2b-88f7-ad4ca8d842e3.png)
 
 3. Test services
    ```ruby
@@ -87,20 +87,20 @@ https://wakatime.com/@spcn17/projects/qknlnznyzo
    ```ruby
    minikube pause
    ```
-   ![image](https://user-images.githubusercontent.com/119097836/226185662-d2692848-4b5d-4116-9110-47905405da2b.png)
+   ![minikube](https://user-images.githubusercontent.com/117428887/226186765-0f02770b-b293-4a2b-88f7-ad4ca8d842e3.png)
 
 ## 4. Install traefik
 1. Install Traefik Resource Definitions
    ```ruby
    kubectl apply -f https://raw.githubusercontent.com/traefik/traefik/v2.9/docs/content/reference/dynamic-configuration/kubernetes-crd-definition-v1.yml
    ```
-    ![image](https://user-images.githubusercontent.com/119097836/226183391-8695b9c9-58fc-4579-a7ae-b0c3461ccafa.png)
+    ![image](https://user-images.githubusercontent.com/117428887/226186940-130aa934-f25e-4e7f-98aa-fb28a57d3518.png)
 
 2. Install RBAC for Traefik
    ```ruby
    kubectl apply -f https://raw.githubusercontent.com/traefik/traefik/v2.9/docs/content/reference/dynamic-configuration/kubernetes-crd-rbac.yml
    ```
-    ![image](https://user-images.githubusercontent.com/119097836/226183302-1ee43bad-92bc-490a-b152-10d4b3641aa7.png) 
+    ![image](https://user-images.githubusercontent.com/117428887/226187375-35e350b3-5e86-4258-8019-eab5f4457c5c.png) 
 
 3. Install Traefik Helmchart
    ```ruby
@@ -108,14 +108,14 @@ https://wakatime.com/@spcn17/projects/qknlnznyzo
    helm repo update 
    helm install traefik traefik/traefik 
    ```
-    ![image](https://user-images.githubusercontent.com/119097836/226183131-b50d850c-2fad-433d-9195-460e5ca92dd6.png)
+    ![image](https://user-images.githubusercontent.com/117428887/226187599-56c3f09f-3d89-4594-802b-90c3c36488e4.png)
 
 4. Verify service is running
    ```ruby
    kubectl get svc -l app.kubernetes.io/name=traefik
    kubectl get po -l app.kubernetes.io/name=traefik
    ```
-    ![image](https://user-images.githubusercontent.com/119097663/226110849-021d582a-9f75-4685-94c1-2b1569d90ec5.png)
+    ![image](https://user-images.githubusercontent.com/117428887/226187639-404cd269-6581-4991-a2b9-d02505eb3bac.png)
 
 5. copy user in dashboard-secret place it at user in traefik-dashboard
 
@@ -131,18 +131,18 @@ https://wakatime.com/@spcn17/projects/qknlnznyzo
    ```ruby
    kubectl apply -f . 
    ```
-   ![image](https://user-images.githubusercontent.com/119097663/226111342-4fa25c0d-bdf7-4beb-95fb-dc99e68fc341.png)
+   ![image](https://user-images.githubusercontent.com/117428887/226187639-404cd269-6581-4991-a2b9-d02505eb3bac.png)
 
 ## Result
 
 ## 1. dashboard
 
-![image](https://user-images.githubusercontent.com/119097836/226182650-3427e2bd-d262-4d67-8c74-7023198916ef.png)
+![minikube](https://user-images.githubusercontent.com/117428887/226186765-0f02770b-b293-4a2b-88f7-ad4ca8d842e3.png)
 
 ## 2. https://traefik.spcn17.local/dashboard/#/http/routers
 
-![image](https://user-images.githubusercontent.com/119097836/226182456-b259a675-7c5f-4c68-845a-65e11d196f4b.png)
+![http](https://user-images.githubusercontent.com/117428887/226187993-5344d135-b75f-4333-8f44-16ce88e3aca5.png)
 
 ## 5. http://web.spcn17.local/
 
-![image](https://user-images.githubusercontent.com/119097836/226182353-df88ba9b-38a6-4434-afdd-445047ddc80e.png)
+![Second](https://user-images.githubusercontent.com/117428887/226188018-4386374e-b0d9-4825-b258-32e6be44b8d1.png)
