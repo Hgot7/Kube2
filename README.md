@@ -3,7 +3,7 @@
 ## Kubernetes In Windows
 
 ## Wakatime
-https://wakatime.com/@spcn17/projects/qknlnznyzo
+https://wakatime.com/@spcn10/projects/acwytwmpyq?start=2023-03-14&end=2023-03-20
 
 ## 1. Install Kubectl
    - Ref 
